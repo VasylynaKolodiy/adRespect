@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./styles/style.min.css">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -57,7 +57,142 @@
   </nav>
 </header>
 <main>
-
+  <section class="intro carousel slide" id="intro" >
+    <div class="carousel-inner h-100">
+      <div class=" carousel-item active h-100">
+        <div class="container d-flex h-100">
+          <div class="intro__info d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Nowoczesna aranżacja Twojego ogrodu </h2>
+            <p class="description" data-aos="fade-up" data-aos-delay="50">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+            <div class="intro__btns d-flex gap-4 flex-wrap">
+              <div data-aos="fade-up" data-aos-delay="150">
+                <button type="button" class="button button-filled button-green">Skontaktuj się z nami</button>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="200">
+                <button type="button" class="button button-outlined button-green">
+                  Zobacz nasze realizacje
+                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" fill="#1B5B31"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="intro__bg">
+            <div style="background-image: url('img/intro1.jpg')" data-aos="zoom-out"></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <div class="container d-flex h-100">
+          <div class="intro__info d-flex flex-column justify-content-center">
+            <h2>Nowoczesna aranżacja Twojego ogrodu 2</h2>
+            <p class="description">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+            <div class="intro__btns d-flex gap-4 flex-wrap">
+              <button type="button" class="button button-filled button-green">Skontaktuj się z nami</button>
+              <button type="button" class="button button-outlined button-green">
+                Zobacz nasze realizacje
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" fill="#1B5B31"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="intro__bg">
+            <div style="background-image: url('img/project1.jpg')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro__controls">
+      <button class="carousel-control-prev" type="button" data-bs-target="#intro" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#intro" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="offer">
+    <div class="container">
+      <div class="row justify-content-center offer__header">
+        <div class="col-lg-10 col-md-12">
+          <span class="caption green" data-aos="fade-up">Oferta</span>
+          <h2 class="heading" data-aos="fade-up" data-aos-delay="50">Działamy <span>kompleksowo</span></h2>
+          <p class="description" data-aos="fade-up" data-aos-delay="100">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+        </div>
+      </div>
+      <div class="offer__items d-flex">
+        <div class="col-xl-4 col-md-12 flex-shrink-1 d-flex" data-aos="fade-right">
+          <div class="offer__item" id="offer1">
+            <div class="offer__img">
+              <img src="img/pencil.png" alt="pencil">
+            </div>
+            <h3>Projekty</h3>
+            <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+            <a href="#" class="link mt-a">
+              Dowiedz się więcej
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-12 flex-shrink-1 d-flex" data-aos="fade-right" data-aos-delay="200">
+          <div class="offer__item" id="offer2">
+            <div class="offer__img">
+              <img src="img/eye.png" alt="eye">
+            </div>
+            <h3>Wizualizacje</h3>
+            <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+            <a href="#" class="link mt-a">
+              Dowiedz się więcej
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-12 flex-shrink-1 d-flex" data-aos="fade-right" data-aos-delay="400">
+          <div class="offer__item" id="offer3">
+            <div class="offer__img">
+              <img src="img/stars.png" alt="stars">
+            </div>
+            <h3>Realizacje</h3>
+            <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+            <a href="#" class="link mt-a">
+              Dowiedz się więcej
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about__container container">
+      <div class="about__bg">
+        <div style="background-image: url('img/about.jpg')" data-aos="zoom-out"></div>
+      </div>
+      <div class="about__info">
+        <span class="caption" data-aos="fade-up">O firmie</span>
+        <h2 class="heading" data-aos="fade-up" data-aos-delay="50">Tworzymy <br> z <span>pasją</span></h2>
+        <p class="description" data-aos="fade-up" data-aos-delay="100">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+        <div data-aos="fade-up" data-aos-delay="150">
+          <button type="button" class="button button-outlined button-grey">
+            Dowiedz się więcej
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#F5F0EC"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
@@ -100,6 +235,7 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="scripts/main.min.js"></script>
 </body>
 </html>

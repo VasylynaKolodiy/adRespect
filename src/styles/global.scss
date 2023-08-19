@@ -1,0 +1,157 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--color-grey);
+  color: var(--color-black);
+}
+main{
+  margin-top: 55px;
+}
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+.description{
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  line-height: 24px;
+}
+.caption{
+  color: var(--color-grey);
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.12px;
+  margin-bottom: 16px;
+  display: block;
+  overflow: hidden;
+  &.green{
+    color: var(--color-green);
+  }
+}
+.heading{
+  font-family: var(--font-primary);
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -1.44px;
+}
+.heading span {
+  font-family: var(--font-secondary);
+  font-style: italic;
+}
+.button{
+  border-radius: 200px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  padding: 12px 24px;
+  transition: .3s;
+  svg{
+    margin-left: 8px;
+    path{
+      transition: .3s;
+    }
+  }
+}
+.button-filled{
+  border: 1px solid;
+  &.button-green{
+    color: var(--color-grey);
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+  }
+  &.button-grey{
+    border-color: var(--color-grey);
+    color: var(--color-green);
+    &:hover{
+      color: var(--color-grey);
+      background-color: var(--color-green);
+    }
+  }
+  &:hover{
+    &.button-green{
+      background-color: transparent;
+      color: var(--color-green);
+    }
+    &.button-grey{
+      color: var(--color-grey);
+      background-color: var(--color-green);
+    }
+  }
+}
+.button-outlined{
+  background-color: transparent;
+  border: 1px solid;
+  &.button-green{
+    color: var(--color-green);
+    border-color: var(--color-green);
+    &:hover{
+      background-color: var(--color-green);
+      color: var(--color-grey);
+      path{
+        fill: var(--color-grey);
+      }
+    }
+  }
+  &.button-grey{
+    color: var(--color-grey);
+    border-color: var(--color-grey);
+    &:hover{
+      background-color: var(--color-grey);
+      color: var(--color-green);
+      path{
+        fill: var(--color-green);
+      }
+    }
+  }
+  &.button-black{
+    color: var(--color-black);
+    border-color: var(--color-black);
+    &:hover{
+      background-color: var(--color-black);
+      color: var(--color-grey);
+      path{
+        fill: var(--color-grey);
+      }
+    }
+  }
+}
+.link{
+  padding: 0 0 4px;
+  color: var(--color-green);
+  border-bottom: 1px solid var(--color-green);
+  text-decoration: none;
+  svg{
+    transition: .3s;
+    margin-left: 10px;
+  }
+  &:hover{
+    svg{
+      margin-left: 20px;
+    }
+  }
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  border-color: #86b7fe;
+}
+
+@media (max-width: 991px) {
+  .heading{
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading{
+    font-size: 28px;
+  }
+  .description{
+    font-size: 14px;
+  }
+}
