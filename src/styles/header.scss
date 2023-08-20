@@ -8,6 +8,19 @@ header{
       opacity: .7;
     }
   }
+  .dropdown-toggle {
+    svg{
+      transition: .3s;
+    }
+    &.show{
+      svg{
+        transform: rotate(180deg);
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
   .nav-link{
     font-size: 14px;
     color: var(--color-black);
