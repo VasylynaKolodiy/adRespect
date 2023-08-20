@@ -12,6 +12,7 @@ header{
     font-size: 14px;
     color: var(--color-black);
     position: relative;
+    font-family: var(--font-secondary);
   }
   .search {
     position: relative;
@@ -27,7 +28,18 @@ header{
       right: 1px;
     }
   }
+  .dropdown-menu{
+    border: none;
+  }
+  .dropdown-item{
+    font-size: 14px;
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+  }
   @media (min-width: 992px) {
+    .dropdown-menu{
+      box-shadow: 3px 7px 15px 2px rgba(0,0,0,.15);
+    }
     .nav-link{
       position: relative;
       &:before {
@@ -82,6 +94,9 @@ header{
   @media (max-width: 991px) {
     .navbar-collapse{
       padding-bottom: 16px;
+    }
+    .dropdown-menu{
+      padding: 0;
     }
   }
 }
