@@ -15,6 +15,9 @@
   .heading{
     margin-bottom: 96px;
   }
+  &__info{
+    padding-left: 70px;
+  }
   &__item{
     overflow: hidden;
     margin-bottom: var(--bs-gutter-x);
@@ -51,6 +54,9 @@
     padding-top: 50px;
     .heading{
       margin-bottom: 30px;
+    }
+    &__info{
+      padding-left: 0;
     }
   }
 }
